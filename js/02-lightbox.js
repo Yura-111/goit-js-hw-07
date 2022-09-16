@@ -18,4 +18,4 @@ const newGalleryItems = galleryItems.map((items) =>
 gallery.innerHTML = newGalleryItems;
 
 const instance = new SimpleLightbox('.gallery a', {captionDelay: 250, captionsData: "alt"});
-    instance.open();
+    instance.on('show.simplelightbox');
